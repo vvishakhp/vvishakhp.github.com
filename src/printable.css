@@ -145,18 +145,18 @@ body {
   line-height: 1.4;
 }
 
-.experience-item {
+.time-line-item {
   position: relative;
   margin: 0 0 4mm;
   padding: 0 0 0 4.2mm;
   border-left: 0.25mm solid #b5aeb9;
 }
 
-.experience-item::before {
+.time-line-item::before {
   content: '';
   position: absolute;
-  left: -1.4mm;
-  top: 1.5mm;
+  left: -1.3mm;
+  top: 0;
   width: 2.4mm;
   height: 2.4mm;
   border-radius: 50%;
@@ -187,17 +187,6 @@ body {
   font-size: 3.1mm;
   font-style: italic;
   color: #564f5e;
-}
-
-.experience-item ul {
-  margin: 0;
-  padding-left: 4mm;
-}
-
-.experience-item li {
-  margin: 0 0 1.1mm;
-  font-size: 2.95mm;
-  line-height: 1.35;
 }
 
 .bottom-layout {
@@ -241,18 +230,18 @@ body {
   line-height: 1.35;
 }
 
-.education-item {
+.time-line-item {
   position: relative;
-  margin: 0 0 3mm;
+  margin: 0 0;
   padding-left: 4mm;
   border-left: 0.25mm solid #bab2bf;
 }
 
-.education-item::before {
+.time-line-item::before {
   content: '';
   position: absolute;
-  left: -1.2mm;
-  top: 1mm;
+  left: -1.3mm;
+  top: 0;
   width: 2.2mm;
   height: 2.2mm;
   border-radius: 50%;
@@ -288,7 +277,7 @@ body {
 .tools-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 3mm 2.4mm;
+  gap: 3mm 5mm;
 }
 
 .tools-grid img {
@@ -299,6 +288,46 @@ body {
 
 .text-lg {
   font-size: 1.5rem;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 1mm;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.skill-item span {
+  font-size: 1rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* Print pagination rules */
+.left-section,
+.section,
+.bottom-section,
+.time-line-item {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.left-section h2,
+.section h2,
+.bottom-section h2,
+.experience-head {
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+/*
+  Optional utility: add on any section root
+  to force a page break after it when printing.
+*/
+.print-page-break-after {
+  break-after: page;
+  page-break-after: always;
 }
 
 @media print {
