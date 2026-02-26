@@ -143,7 +143,24 @@
     "Team Building and Management",
     "Leadership"
   ],
-  "education": [],
+  "education": [
+    {
+      "degree": "Diploma in Computer Engineering",
+      "institution": "GPTC, Kalamassery",
+      "yearRange": "2013 - 2016",
+      "notes": "Dropped out"
+    },
+    {
+      "degree": "10+2, THSC",
+      "institution": "MTHSS, Kaloor",
+      "yearRange": "2011 - 2013"
+    },
+    {
+      "degree": "10th, THSLC",
+      "institution": "MTHSS, Kaloor",
+      "yearRange": "2011"
+    }
+  ],
   "personalInfo": {
     "dob": "19-Dec-1995",
     "languages": [

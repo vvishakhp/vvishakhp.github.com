@@ -3,6 +3,21 @@
   import type { PortfolioData } from '../types/portfolio'
 
   export let basics: PortfolioData['basics']
+
+  const openPrintableVersion = () => {
+    const printWindow = window.open('/printable.html', '_blank')
+    if (!printWindow) return
+
+    const triggerPrint = () => {
+      printWindow.focus()
+      printWindow.print()
+      setTimeout(() => {
+        printWindow.close()
+      }, 250)
+    }
+
+    printWindow.addEventListener('load', triggerPrint, { once: true })
+  }
 </script>
 
 <section
@@ -52,6 +67,16 @@
           <a class="text-gray-600 hover:text-gray-900" href={`mailto:${basics.email}`}>{basics.email}</a>
           <span class="h-4 w-px bg-gray-200"></span>
           <a class="text-gray-600 hover:text-gray-900" href={`tel:${basics.phone.replace(/\s/g, '')}`}>{basics.phone}</a>
+        </div>
+
+        <div class="pt-2">
+          <button
+            type="button"
+            class="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-300/60 transition hover:scale-[1.02] hover:bg-blue-700 md:text-base"
+            on:click={openPrintableVersion}
+          >
+            Download Printable PDF
+          </button>
         </div>
       </div>
     </div>
