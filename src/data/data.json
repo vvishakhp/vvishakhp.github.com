@@ -1,0 +1,182 @@
+{
+  "basics": {
+    "name": "Vishakh P Kumar",
+    "role": "Software Engineer",
+    "tagline": "Result-oriented engineer with 6+ years of experience in building scalable systems and modern web applications.",
+    "location": "Karinilam (H), Mulanthuruthy, Ernakulam",
+    "email": "vvishakhp@gmail.com",
+    "phone": "+91 9447 143553",
+    "yearsOfExperience": "6+ years",
+    "profileImage": "/images/profile_picture.jpg",
+    "fullSizeImage": "/images/full_size_image.jpg"
+  },
+  "about": {
+    "paragraphs": [
+      "I am a result-oriented professional targeting software engineering assignments with leading organizations.",
+      "I work as part of scrum teams in fully agile projects and have been involved in transitioning legacy AngularJS and .NET systems into modern microservices and microfrontends with .NET Core and React.",
+      "I contribute across software design, implementation, functional validation, and peer code reviews while mentoring junior developers and interns."
+    ]
+  },
+  "experience": [
+    {
+      "company": "Happiest Minds Technologies Ltd.",
+      "title": "Module Lead",
+      "duration": "Jun 2023 - Present",
+      "bullets": [
+        "Participate in design discussions and code reviews, integrating and validating new product designs.",
+        "Research, design, and implement scalable applications for information extraction and retrieval workflows.",
+        "Support migration of legacy systems to modern .NET Core and React-driven architectures."
+      ]
+    },
+    {
+      "company": "KeyValue Software Systems",
+      "title": "Software Engineer",
+      "duration": "Mar 2022 - Apr 2023",
+      "bullets": [
+        "Contributed to end-to-end projects from requirement gathering through production deployment.",
+        "Built software using React, Angular, and .NET with focus on design verification and functional testing.",
+        "Worked on software design and implementation for embedded and production-grade systems."
+      ]
+    },
+    {
+      "company": "Claysys Technologies Pvt. Ltd.",
+      "title": "Senior Software Engineer",
+      "duration": "Dec 2018 - Mar 2022",
+      "bullets": [
+        "Contributed to full lifecycle delivery for financial services institutions.",
+        "Supported senior management with product direction and design decisions on critical modules.",
+        "Analyzed defects and proposed feasible technical solutions through requirement and problem analysis."
+      ]
+    }
+  ],
+  "technicalSkills": {
+    "backend": [
+      ".NET Framework",
+      ".NET Core",
+      "ASP.NET"
+    ],
+    "frontend": [
+      "HTML",
+      "CSS",
+      "TypeScript",
+      "Angular",
+      "React"
+    ],
+    "databases": [
+      "MSSQL Server",
+      "Postgres",
+      "DynamoDB"
+    ],
+    "devops": [
+      "Docker",
+      "Kubernetes",
+      "CloudFormation"
+    ]
+  },
+  "skills": [
+    {
+      "name": "HTML",
+      "icon": "/images/icons/html5.svg"
+    },
+    {
+      "name": "CSS",
+      "icon": "/images/icons/css.svg"
+    },
+    {
+      "name": "TypeScript",
+      "icon": "/images/icons/typescript.svg"
+    },
+    {
+      "name": "Angular",
+      "icon": "/images/icons/angular.svg"
+    },
+    {
+      "name": "React",
+      "icon": "/images/icons/react.svg"
+    },
+    {
+      "name": "Golang",
+      "icon": "/images/icons/go.svg"
+    },
+    {
+      "name": ".NET",
+      "icon": "/images/icons/dotnet.svg"
+    },
+    {
+      "name": "MSSQL Server",
+      "icon": "/images/icons/database.svg"
+    },
+    {
+      "name": "Postgres",
+      "icon": "/images/icons/postgresql.svg"
+    },
+    {
+      "name": "DynamoDB",
+      "icon": "/images/icons/database.svg"
+    },
+    {
+      "name": "Docker",
+      "icon": "/images/icons/docker.svg"
+    },
+    {
+      "name": "Kubernetes",
+      "icon": "/images/icons/kubernetes.svg"
+    },
+    {
+      "name": "CloudFormation",
+      "icon": "/images/icons/cloud.svg"
+    },
+    {
+      "name": "Terraform",
+      "icon": "/images/icons/terraform.svg"
+    },
+    {
+      "name": "Cursor IDE",
+      "icon": "/images/icons/cursor.svg"
+    }
+  ],
+  "coreSkills": [
+    "Software Development",
+    "Requirement Gathering and Analysis",
+    "Report Development",
+    "Client and Stakeholder Engagement",
+    "Team Building and Management",
+    "Leadership"
+  ],
+  "education": [],
+  "personalInfo": {
+    "dob": "19-Dec-1995",
+    "languages": [
+      "English",
+      "Malayalam"
+    ]
+  },
+  "projects": [],
+  "certifications": [],
+  "socialLinks": [
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/in/vvishakhp/",
+      "label": "Connect on LinkedIn",
+      "icon": "/images/icons/social-linkedin.svg"
+    },
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/vvishakhp/",
+      "label": "Check out my GitHub",
+      "icon": "/images/icons/social-github.svg"
+    },
+    {
+      "platform": "StackOverflow",
+      "url": "https://stackoverflow.com/users/7027229/vishakh-warrier",
+      "label": "Check out my StackOverflow",
+      "icon": "/images/icons/social-stackoverflow.svg"
+    },
+    {
+      "platform": "Instagram",
+      "url": "https://www.instagram.com/vishakh_warrier/",
+      "label": "Connect on Instagram",
+      "icon": "/images/icons/social-instagram.svg"
+    }
+  ]
+}

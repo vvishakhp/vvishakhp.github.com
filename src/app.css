@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Gray tokens mapped from reference design system */
+:root {
+  --app-gray-default: 255 255 255;
+  --app-gray-50: 249 250 251;
+  --app-gray-100: 243 244 246;
+  --app-gray-200: 229 231 235;
+  --app-gray-300: 209 213 219;
+  --app-gray-400: 156 163 175;
+  --app-gray-500: 107 114 128;
+  --app-gray-600: 75 85 99;
+  --app-gray-700: 55 65 81;
+  --app-gray-800: 31 41 55;
+  --app-gray-900: 17 24 39;
+  --app-gray-950: 3 7 18;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply m-0 min-h-screen bg-gray text-gray-600 antialiased;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+#app {
+  @apply min-h-screen;
+}
+
+@layer components {
+  .section-container {
+    @apply w-full bg-gray py-16 md:py-20;
+  }
+
+  .section-inner {
+    @apply mx-auto flex w-full max-w-content flex-col gap-6 px-4 md:gap-12 md:px-8;
+  }
+
+  .section-tag {
+    @apply inline-flex w-fit items-center justify-center self-center rounded-2xl border border-gray-200 bg-gradient-to-r from-gray-100 to-gray-50 px-6 py-2 text-base font-bold tracking-wide text-gray-800 shadow-sm md:text-lg;
+  }
+
+  .app-card {
+    @apply rounded-xl border border-gray-100 bg-gray p-8 shadow-sm shadow-gray-200/70;
+  }
+}
