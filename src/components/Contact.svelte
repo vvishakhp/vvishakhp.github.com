@@ -34,7 +34,7 @@
       <div class="flex flex-col items-center md:gap-4">
         <div class="flex items-center gap-3 md:gap-5">
           <Mail class="h-6 w-6 text-gray-900 md:h-8 md:w-8" />
-          <p class="text-base font-semibold tracking-[-0.02em] text-gray-900 md:text-4xl">{basics.email}</p>
+          <a href={`mailto:${basics.email}`} class="text-base font-semibold tracking-[-0.02em] text-gray-900 md:text-4xl">{basics.email}</a>
           <button
             type="button"
             class="relative rounded-lg p-2 text-gray-700 transition hover:bg-gray-100"
@@ -49,7 +49,7 @@
         </div>
         <div class="flex items-center gap-3 md:gap-5">
           <Phone class="h-6 w-6 text-gray-900 md:h-8 md:w-8" />
-          <p class="text-base font-semibold tracking-[-0.02em] text-gray-900 md:text-4xl">{basics.phone}</p>
+          <a href="tel:${basics.phone.replace(/\s/g, '')}" class="text-base font-semibold tracking-[-0.02em] text-gray-900 md:text-4xl">{basics.phone}</a>
           <button
             type="button"
             class="relative rounded-lg p-2 text-gray-700 transition hover:bg-gray-100"
