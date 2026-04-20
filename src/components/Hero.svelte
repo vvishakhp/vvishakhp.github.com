@@ -75,7 +75,7 @@
             class="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-300/60 transition hover:scale-[1.02] hover:bg-blue-700 md:text-base"
             on:click={openPrintableVersion}
           >
-            Download Printable PDF
+            Printable Version
           </button>
         </div>
       </div>
