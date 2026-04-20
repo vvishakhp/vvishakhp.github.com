@@ -4,7 +4,7 @@
   export let skills: PortfolioData['skills']
 </script>
 
-<section class="bottom-section">
+<section class="section">
   <h2>Tools / Technologies</h2>
   <div class="tools-grid">
     {#each skills as skill}

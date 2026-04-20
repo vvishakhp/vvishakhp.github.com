@@ -27,17 +27,19 @@
 
 <section class="resume">
   <section class="top-layout">
-    <PrintableSidebar basics={data.basics} aboutText={aboutText} technicalGroups={technicalGroups} personalInfo={data.personalInfo} />
+    <PrintableSidebar 
+    basics={data.basics} 
+    aboutText={aboutText} 
+    technicalGroups={technicalGroups} 
+    personalInfo={data.personalInfo} 
+    coreSkills={data.coreSkills} />
 
     <section class="right-main">
       <PrintableSummary summaryPoints={summaryPoints} />
       <PrintableExperience experience={data.experience} />
+      <PrintableEducation education={data.education} />
+      <PrintableTools skills={toolSkills} />
     </section>
   </section>
 
-  <section class="bottom-layout">
-    <PrintableBottomSkills coreSkills={data.coreSkills} />
-    <PrintableEducation education={data.education} />
-    <PrintableTools skills={toolSkills} />
-  </section>
 </section>

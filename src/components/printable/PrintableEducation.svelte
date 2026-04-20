@@ -4,10 +4,10 @@
   export let education: PortfolioData['education']
 </script>
 
-<section class="bottom-section">
+<section class="section">
   <h2>Education</h2>
   {#each education as item}
-    <article class="time-line-item">
+    <article class="time-line-item" style="padding-left: 2rem; padding-bottom: 2rem;">
       <p class="education-degree">
         {item.degree}
         {#if item.notes}

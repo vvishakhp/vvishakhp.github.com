@@ -1,10 +1,12 @@
 <script lang="ts">
   import type { PortfolioData } from '../../types/portfolio'
+    import PrintableBottomSkills from './PrintableBottomSkills.svelte';
 
   export let basics: PortfolioData['basics']
   export let aboutText: string
   export let technicalGroups: string[]
   export let personalInfo: PortfolioData['personalInfo']
+  export let coreSkills: string[];
 
   const contactItems = [
     { icon: '☎', value: basics.phone },
@@ -48,6 +50,15 @@
     <ul class="left-list">
       <li>DOB - {personalInfo.dob}</li>
       <li>Languages: {personalInfo.languages.join(', ')}</li>
+    </ul>
+  </section>
+
+  <section class="left-section">
+    <h2>Skills</h2>
+    <ul class="left-list">
+      {#each coreSkills as skill}
+        <li>{skill}</li>
+      {/each}
     </ul>
   </section>
 </aside>
