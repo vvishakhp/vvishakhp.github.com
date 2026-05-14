@@ -31,36 +31,52 @@
     </div>
 
     <div class="flex flex-col items-center gap-6 md:gap-12">
-      <div class="flex flex-col items-center md:gap-4">
-        <div class="flex items-center gap-3 md:gap-5">
-          <Mail class="h-6 w-6 text-gray-900 md:h-8 md:w-8" />
-          <a href={`mailto:${basics.email}`} class="text-base font-semibold tracking-[-0.02em] text-gray-900 md:text-4xl">{basics.email}</a>
-          <button
-            type="button"
-            class="relative rounded-lg p-2 text-gray-700 transition hover:bg-gray-100"
-            aria-label="Copy email"
-            on:click={() => copyValue(basics.email, 'email')}
-          >
-            <Copy class="h-5 w-5" />
-            {#if copiedValue === 'email'}
-              <span class="absolute -top-8 left-1/2 -translate-x-1/2 rounded-md bg-gray-900 px-2 py-1 text-xs text-gray">Copied!</span>
-            {/if}
-          </button>
+      <div class="flex w-full max-w-2xl flex-col gap-4 md:max-w-none md:items-center">
+        <div
+          class="flex w-full flex-col gap-2 sm:flex-row sm:items-center sm:justify-center md:gap-5"
+        >
+          <Mail class="h-6 w-6 shrink-0 text-gray-900 md:h-8 md:w-8" />
+          <div class="flex min-w-0 flex-1 items-center gap-2 sm:justify-center md:gap-5">
+            <a
+              href={`mailto:${basics.email}`}
+              class="min-w-0 flex-1 break-words text-base font-semibold tracking-[-0.02em] text-gray-900 sm:text-center md:flex-initial md:text-4xl"
+              >{basics.email}</a
+            >
+            <button
+              type="button"
+              class="relative shrink-0 rounded-lg p-2 text-gray-700 transition hover:bg-gray-100"
+              aria-label="Copy email"
+              on:click={() => copyValue(basics.email, 'email')}
+            >
+              <Copy class="h-5 w-5" />
+              {#if copiedValue === 'email'}
+                <span class="absolute -top-8 left-1/2 -translate-x-1/2 rounded-md bg-gray-900 px-2 py-1 text-xs text-gray">Copied!</span>
+              {/if}
+            </button>
+          </div>
         </div>
-        <div class="flex items-center gap-3 md:gap-5">
-          <Phone class="h-6 w-6 text-gray-900 md:h-8 md:w-8" />
-          <a href="tel:${basics.phone.replace(/\s/g, '')}" class="text-base font-semibold tracking-[-0.02em] text-gray-900 md:text-4xl">{basics.phone}</a>
-          <button
-            type="button"
-            class="relative rounded-lg p-2 text-gray-700 transition hover:bg-gray-100"
-            aria-label="Copy phone"
-            on:click={() => copyValue(basics.phone.replace(/\s/g, ''), 'phone')}
-          >
-            <Copy class="h-5 w-5" />
-            {#if copiedValue === 'phone'}
-              <span class="absolute -top-8 left-1/2 -translate-x-1/2 rounded-md bg-gray-900 px-2 py-1 text-xs text-gray">Copied!</span>
-            {/if}
-          </button>
+        <div
+          class="flex w-full flex-col gap-2 sm:flex-row sm:items-center sm:justify-center md:gap-5"
+        >
+          <Phone class="h-6 w-6 shrink-0 text-gray-900 md:h-8 md:w-8" />
+          <div class="flex min-w-0 flex-1 items-center gap-2 sm:justify-center md:gap-5">
+            <a
+              href={`tel:${basics.phone.replace(/\s/g, '')}`}
+              class="min-w-0 flex-1 break-words text-base font-semibold tracking-[-0.02em] text-gray-900 sm:text-center md:flex-initial md:text-4xl"
+              >{basics.phone}</a
+            >
+            <button
+              type="button"
+              class="relative shrink-0 rounded-lg p-2 text-gray-700 transition hover:bg-gray-100"
+              aria-label="Copy phone"
+              on:click={() => copyValue(basics.phone.replace(/\s/g, ''), 'phone')}
+            >
+              <Copy class="h-5 w-5" />
+              {#if copiedValue === 'phone'}
+                <span class="absolute -top-8 left-1/2 -translate-x-1/2 rounded-md bg-gray-900 px-2 py-1 text-xs text-gray">Copied!</span>
+              {/if}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -80,7 +96,9 @@
             </a>
           {/each}
         </div>
-        <p class="text-sm text-gray-500">DOB: {personalInfo.dob} | Languages: {personalInfo.languages.join(', ')}</p>
+        <p class="max-w-full px-1 text-center text-sm text-gray-500 break-words">
+          DOB: {personalInfo.dob} | Languages: {personalInfo.languages.join(', ')}
+        </p>
       </div>
     </div>
   </div>

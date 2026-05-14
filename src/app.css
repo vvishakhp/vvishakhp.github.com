@@ -31,6 +31,13 @@ body {
   @apply min-h-screen;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .animate-waving-hand,
+  .animate-ping {
+    animation: none !important;
+  }
+}
+
 @layer components {
   .section-container {
     @apply w-full bg-gray py-16 md:py-20;
@@ -45,6 +52,6 @@ body {
   }
 
   .app-card {
-    @apply rounded-xl border border-gray-100 bg-gray p-8 shadow-sm shadow-gray-200/70;
+    @apply rounded-xl border border-gray-100 bg-gray p-4 shadow-sm shadow-gray-200/70 sm:p-6 md:p-8;
   }
 }

@@ -26,8 +26,8 @@
 >
   <div class="section-inner">
     <div class="flex flex-col gap-12 md:flex-row">
-      <div class="flex items-center justify-center md:order-last md:flex-grow md:justify-end">
-        <div class="relative h-[300px] w-[280px] md:h-[360px] md:w-[320px]">
+      <div class="flex w-full max-w-full items-center justify-center md:order-last md:flex-grow md:justify-end">
+        <div class="relative mx-auto h-[300px] w-full max-w-[280px] md:h-[360px] md:w-[320px] md:max-w-none">
           <div class="group absolute z-10 h-[280px] w-[240px] overflow-hidden border-8 border-gray bg-gray-900 max-md:left-5 md:left-0 md:top-0 md:h-[320px] md:w-[280px]">
             <img
               src={basics.profileImage}
@@ -63,10 +63,10 @@
           </div>
         </div>
 
-        <div class="flex flex-wrap items-center gap-3">
-          <a class="text-gray-600 hover:text-gray-900" href={`mailto:${basics.email}`}>{basics.email}</a>
-          <span class="h-4 w-px bg-gray-200"></span>
-          <a class="text-gray-600 hover:text-gray-900" href={`tel:${basics.phone.replace(/\s/g, '')}`}>{basics.phone}</a>
+        <div class="flex min-w-0 flex-wrap items-center gap-3">
+          <a class="min-w-0 break-words text-gray-600 hover:text-gray-900" href={`mailto:${basics.email}`}>{basics.email}</a>
+          <span class="hidden h-4 w-px shrink-0 bg-gray-200 sm:block" aria-hidden="true"></span>
+          <a class="min-w-0 break-words text-gray-600 hover:text-gray-900" href={`tel:${basics.phone.replace(/\s/g, '')}`}>{basics.phone}</a>
         </div>
 
         <div class="pt-2">
