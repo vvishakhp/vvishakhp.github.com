@@ -19,9 +19,18 @@
   },
   "experience": [
     {
+      "company": "AppHelix Technologies Pvt. Ltd.",
+      "title": "Software Engineer II",
+      "duration": "Jun 2024 - Present",
+      "bullets": [
+        "Working with leading clients in the Payment Processing and Risk Management domains.",
+        "Heading AI driven development initiatives to build scalable and efficient solutions."
+      ]
+    },
+    {
       "company": "Happiest Minds Technologies Ltd.",
       "title": "Module Lead",
-      "duration": "Jun 2023 - Present",
+      "duration": "Jun 2023 - Jun 2024",
       "bullets": [
         "Participate in design discussions and code reviews, integrating and validating new product designs.",
         "Research, design, and implement scalable applications for information extraction and retrieval workflows.",
